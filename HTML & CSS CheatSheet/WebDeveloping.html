@@ -1,0 +1,447 @@
+<html>
+<head>
+<title>HTML and CSS</title>
+<link rel="stylesheet" href="code.css">
+</head>
+<body>
+Click here to go to google page: 
+<a href="https://google.com" target="_blank">Google</a> <!-- Target is for opening link on other tab -->
+
+
+<!-- HTML header tags -->
+<h2><center>HTML header tags</center></h2>
+<h1>This is h1 on the page</br></h1>
+<h3>This is h3 on the page</br></h3>
+<h4>This is h4 on the page</br></h4>
+<h5>This is h5 on the page</br></h5>
+<h6>This is h6 on the page</br></h6>
+<p>This is <strong>Strong</strong> and <em>emphasis</em></br></p>
+<img src="ex.jpg" width="200" height="100">
+
+
+<!-- HTML List -->
+<h2><center>HTML List</center></h2>
+<ul type="circle" id="ul1">
+<li>This is first line</li>
+<li>This is second line</li>
+<ul>
+<li>This is under second line</li>
+</ul>
+<li>This is third line</li>
+</ul>
+<ol type="A">
+<li>This is first line</li>
+<li>This is second line</li>
+<ol type="a">
+<li>This is under second line</li>
+</ol>
+<li>This is third line</li>
+</ol>
+
+
+<!-- HTML Table -->
+<h2><center>HTML Table</center></h2>
+<center>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Enroll</th>
+<th>Subject</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Amar</td>
+<td>0123</td>
+<td>math</td>
+</tr>
+<tr>
+<td>Ram</td>
+<td>7896</td>
+<td>English</td>
+</tr>
+</tbody>
+</table>
+</center>
+
+
+<!-- HTML Form -->
+<h2><center>HTML Form</center></h2>
+<form action="Server.php">
+Name: <input type="text" name="MyName"id="">
+<br>
+<br>
+Address: <input type="text" name="MyAddress"id="">
+<br>
+<br>
+Select Date: <input type="Date" name="MyDate" id="">
+<br>
+<br>
+Select Number: <input type="Number" name="MyNumber" id="">
+<br>
+<br>
+Check the box: <input type="checkbox" name="MyCheckbox" id="" checked>
+<br>
+<br>
+Select Gender: Male<input type="radio" name="MyRadio" id="">Female<input type="radio" name="MyRadio" id="">
+<br>
+<br>
+Write About:<br><textarea name="textarea" id="tarea" rows="10" cols="50"></textarea>
+<br>
+<br>
+<label for="car">Choose The Car</label>
+<select name="MyCar" id="car">
+<option>Maruti</option>
+<option>Sumo</option>
+<option selected>Nano</option>
+</select>
+<br>
+<br>
+<input type="submit" value="Click to Submit" id="sub">
+<input type="reset" value="Reset" id="res">
+</form>
+
+
+<!-- HTML Inline and Block Elements -->
+<h2><center>HTML Inline and Block Elements</center></h2>
+<p style="border: 2px solid black;">This is a paragraph</p>
+<p style="border: 3px solid blue;">This is also a paragraph</p>
+<span style="border: 2px solid black;">This is a span</span>
+<span style="border: 3px solid blue;">This is also a span</span>
+<p>. is used for class in css and # is for ID.</p>
+
+
+<!-- <center><h2>HTML Entities</h2></center> -->
+<center><h2>HTML Entities</h2></center>
+<p>&nbsp is used for blank space</p>
+<p>&ltp&gt is used for paragraph tag</p>
+<p>Special entities from internet &amp, &#190, &hamilt; &#8203</p>
+<p id="pid">This is ID paragraph</p> 
+<p class="pclass">This is class paragraph</p> 
+<p id="rgb">This is RGB color paragraph</p> 
+
+
+<!-- <center><h2>HTML Paragraph Formatting</h2></center> -->
+<center><h2>HTML Paragraph Formatting</h2></center>
+<p id="pid1">This is paragraph formatting</p> 
+<p id="pid2">This is paragraph formatting</p> 
+<p id="pid3">This is paragraph formatting</p> 
+
+
+<!-- HTML Box model -->
+<h2><center>HTML Box model</center></h2>
+<div class="BoxModel1">
+<div class="BoxModel">
+<h3>This is my header</h3>
+<p>This is my content.This is my content.This is my content.This is my content.This is my content.This is my content</p>
+</div>
+<div class="BoxModel">
+<h3>This is my header</h3>
+<p>This is my content</p>
+</div>
+</div>
+
+
+<!-- HTML Alignment -->
+<h2><center>HTML Alignment</center></h2>
+<div class="aligning">
+<h3><center>Alignment</h3></center>
+<div class="items" id="computer">
+<h3>Computer</h3>
+<p id="computerpara" class="para">This is my computer paragraph</p>
+</div>
+<div class="items" id="mobile">
+<h3>Mobile</h3>
+<p id="mobilepara" class="para">This is my mobile paragraph</p>
+</div>
+<div class="items" id="car">
+<h3>Car</h3>
+<p id="carpara" class="para">This is my car paragraph</p>
+</div>
+</div>
+
+
+<!-- HTML Button Design -->
+<h2><center>HTML Button Design</center></h2>
+<div class="btndiv">
+<a href="" class="btn">Read More</a>
+<button class="btn1">Click Me</button>
+</div>
+
+
+<!-- HTML Navigation -->
+<h2><center>HTML Navigation</center></h2>
+<header>
+<nav class="navbar">
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">About</a></li>
+<li><a href="#">Services</a></li>
+<li><a href="#">Contact us</a></li>
+<div class="search">
+<input type="text" name="search" id="search" placeholder="SearchBox">
+<button class="navbtn">Search</button>
+</div>
+</ul>
+</nav>
+</header>
+
+
+<!-- HTML Display Property -->
+<h2><center>HTML Display Property</center></h2>
+<header class="top">
+<h4>This is my website</h4>
+<img src="ex1.png" id="img2">
+</header>
+<div class="displayDiv">
+<div class="box">
+<h3>This is my heading</h3>
+<p>This is my content</p>
+</div>
+<div class="box">
+<h3>This is my heading</h3>
+<p>This is my content</p>
+</div>
+<div class="box">
+<h3>This is my heading</h3>
+<p>This is my content</p>
+</div>
+</div>
+
+
+<!-- HTML Position Property -->
+<h2><center>HTML Position Property</center></h2>
+<div class="pos">
+<div class="boxes" id="box1">Box 1</div>
+<div class="boxes" id="box2">Box 2</div>
+<div class="boxes" id="box3">Box 3</div>
+<div class="boxes" id="box4">Box 4</div>
+</div>
+
+
+<!-- HTML Visibility and Z index -->
+<h2><center>HTML Visibility and Z index</center></h2>
+<div class="newbox" id="newbox1"></div>
+<div class="newbox" id="newbox2"></div>
+
+
+<!-- HTML Flexbox -->
+<h2><center>HTML Flexbox</center></h2>
+<div class="flex">
+<div class="flexbox" id="flexbox1">First box</div>
+<div class="flexbox" id="flexbox2">Second box</div>
+<div class="flexbox" id="flexbox3">Third box</div>
+<div class="flexbox" id="flexbox4">Fourth box</div>
+</div>
+
+
+<!-- HTML Media Query -->
+<h2><center>HTML Media Query</center></h2>
+<div id="media1">This is 300 width</div>
+<div id="media2">This is 500 width</div>
+<div id="media3">This is 900 width</div>
+
+
+<!-- HTML Selectors -->
+<h2><center>HTML Selectors</center></h2>
+<div class="selector1"><p>This is paragraph in div</p></div>
+<div class="selector2"><ul><li><p>This is paragraph in ul which is in div</p></li></ul></div>
+
+
+<!-- HTML Attribute and Nth Child Pseudo Selectors -->
+<h2><center>HTML Attribute and Nth Child Pseudo Selectors</center></h2>
+<div class="pseudo">
+Click here to go to google page: <a href="https://google.com" target="_blank">Google</a>
+<form action="" class="form-control">
+<input type="text" placeholder="Enter your name">
+<input type="password" placeholder="Enter your password">
+<input type="submit" value="submit">
+
+<ul>
+<li class="liPseudo" id="liPseudo1">liPseudo1</li>
+<li class="liPseudo" id="liPseudo2">liPseudo2</li>
+<li class="liPseudo" id="liPseudo3">liPseudo3</li>
+<li class="liPseudo" id="liPseudo4">liPseudo4</li>
+<li class="liPseudo" id="liPseudo5">liPseudo5</li>
+<li class="liPseudo" id="liPseudo6">liPseudo6</li>
+<li class="liPseudo" id="liPseudo7">liPseudo7</li>
+<li class="liPseudo" id="liPseudo8">liPseudo8</li>
+</ul>
+</form>
+</div>
+
+
+<!-- HTML Before and After Pseudo Selectors -->
+<h2><center>HTML Before and After Pseudo Selectors</center></h2>
+<div id="pseudoBack">
+<header>
+<nav>
+<ul class="pseudoUl">
+<li><a href="">Home</a></li>
+<li><a href="">Services</a></li>
+<li><a href="">Contact</a></li>
+<li><a href="">About</a></li>
+</ul>
+</nav>
+</header>
+<section>
+<h1 id="pseudoContent">WELCOME TO OUR PAGE</h1>
+</section>
+</div>
+
+
+<!-- HTML Box and Text Shadow -->
+<h2><center>HTML Box and Text Shadow</center></h2>
+<div class="BoxShadow" id="BoxShadow1"><h4>BoxShadow1</h4></div>
+<div class="BoxShadow" id="BoxShadow2"><h4>BoxShadow2</h4></div>
+<div class="BoxShadow" id="BoxShadow3"><h4>BoxShadow3</h4></div>
+<div class="BoxShadow" id="BoxShadow4"><h4>BoxShadow4</h4></div>
+<div class="BoxShadow" id="BoxShadow5"><h4>BoxShadow5</h4></div>
+
+
+<!-- HTML Keyframes and Animations -->
+<h2><center>HTML Keyframes and Animations </center></h2>
+<div class="animation">
+<div class="animationBox1">
+Animation Box 1
+</div>
+<div class="animationBox2">
+Animation Box 2
+</div>
+</div>
+
+
+<!-- HTML Transition -->
+<h2><center>HTML Transition and Transform </center></h2>
+<div id="TT">
+<div class="transition">
+<div id="transitionBox">Transition Box</div>
+</div>
+<div class="transform">
+<div id="transformBox">Transition Box</div>
+</div>
+<img src="love.png" id="love">
+</div>
+
+<!-- HTML Grid -->
+<h2><center>HTML Grid </center></h2>
+<div class="grid">
+<div class="item">This is Item 1</div>
+<div class="item">This is Item 2</div>
+<div class="item">This is Item 3</div>
+<div class="item">This is Item 4</div>
+<div class="item">This is Item 5</div>
+<div class="item">This is Item 6</div>
+<div class="item">This is Item 7</div>
+<div class="item">This is Item 8</div>
+<div class="item">This is Item 9</div>
+<div class="item">This is Item 10</div>
+<div class="item">This is Item 11</div>
+<div class="item">This is Item 12</div>
+</div>
+
+
+<!-- HTML Grid minmax -->
+<h2><center>HTML Grid minmax</center></h2>
+<div class="minmax">
+<div class="minItem">This is Item 1</div>
+<div class="minItem">This is Item 2</div>
+<div class="minItem">This is Item 3</div>
+<div class="minItem">This is Item 4</div>
+<div class="minItem">This is Item 5</div>
+<div class="minItem">This is Item 6</div>
+<div class="minItem">This is Item 7</div>
+<div class="minItem">This is Item 8</div>
+<div class="minItem">This is Item 9</div>
+</div>
+
+
+<!-- HTML Grid template-areas -->
+<h2><center>HTML Grid template-areas</center></h2>
+<div class="tempContain">
+<div class="template" id="temnav"><h3>Navigation</h3>Home About Contact</div>
+<div class="template" id="temarea"><h3>Area</h3><pre>Marvel Entertainment, LLC(formerly Marvel Enterprises) 
+is an American entertainment company founded in 
+June 1998 and based in New York City, New York, formed by the 
+merger of Marvel Entertainment Group and Toy Biz. 
+The company is a wholly owned subsidiary of The Walt
+Disney Company since 2009, and is mainly 
+known for its comic books by Marvel Comics, as well 
+as its forays into films and television/streaming shows, 
+including those within the Marvel Cinematic Universe(MCU)</pre></div>
+<div class="template" id="temsec"><h3>Section</h3><pre>Formerly Marvel Enterprises (1998–2005)
+Genre Superhero fiction
+Marvel Entertainment Group
+Founded	June 2, 1998; 24 years ago
+Headquarters New York City, New York, United States.	
+Marvel Comics
+Marvel Games
+Marvel New Media
+Marvel Characters
+Marvel Unlimited
+Website	www.marvel.com</pre></div>
+<footer class="template">This page was last edited on 28 January 2023, at 07:19 (UTC).
+Text is available under the Creative Commons Attribution-ShareAlike License 3.0; additional terms may apply. 
+By using this site, you agree to the Terms of Use and Privacy Policy. 
+Wikipedia® is a registered trademark of the Wikimedia Foundation, Inc., a non-profit organization.</footer>
+</div>
+
+
+<!-- HTML GIF animation -->
+<h2><center>HTML Gradient and gif animation</center></h2>
+<div class="Run">
+<img src="run.gif">
+</div>
+
+
+<!-- HTML Gradient -->
+<div class="grad">
+</div>
+
+
+<!-- Detail and Summary -->
+<h2><center>HTML details and summary Tag</center></h2>
+<details>
+<summary>This is summary</summary>
+<p>this is hidden</p>
+<p>this is also hidden</p>
+</details>
+
+<!-- Image Caption -->
+<h2><center>HTML Image Caption</center></h2>
+<figure>
+<img src="ex2.jpg" width="250" height="200">
+<figcaption>This is figcaption for the image</figcaption>
+</figure>
+
+
+<!-- Progress Bar -->
+<h2><center>HTML Progress Bar</center></h2>
+<progress value="50" max="100"></progress>
+
+
+<!-- new input types -->
+<h2><center>HTML new input types</center></h2>
+<input type="color">
+<input type="date">
+<input type="datetime-local">
+<input type="range" min="0" max="100">
+<input type="time">
+
+<!-- new svg tag -->
+<h2><center>HTML svg tag</center></h2>
+<svg height="100" width="100" style="border:2px solid black; border-radius:20px;">
+<circle cx="50" cy="50" r="30" stroke="black" stroke-width="1" fill="red"></svg>
+
+
+<!-- audio tag -->
+<h2><center>HTML audio tag</center></h2>
+<audio controls>
+<source src="ring.mp3" type="audio/mp3">
+</audio>
+<video controls>
+<source src="vid.mp4" type="video/mp4">
+</video>
+</body>
+</html>
