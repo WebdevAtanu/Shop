@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Fetch</title>
+</head>
+<body>
+	
+</body>
+
+<script>
+//to fetch data  
+<!-- let a=fetch("https://goweather.herokuapp.com/weather/%7Bcity%7D"); -->
+<!-- a.then((response1)=>{ -->
+<!-- console.log(response1.status);//it will show the status -->
+<!-- console.log(response1.ok);//it will show the response code -->
+<!-- return response1.json();//it will fetch the json object from the url -->
+<!-- }).then((response2)=>{ -->
+<!-- console.log(response2); -->
+<!-- }) -->
+
+//to post data
+<!-- let opt={ -->
+<!-- method:"post", -->
+<!-- headers:{ -->
+<!-- "content-type":"application/json" -->
+<!-- }, -->
+<!-- body: JSON.stringify({title:"atanu",body:"this is my body",userId:100}), -->
+<!-- } -->
+<!-- fetch('https://jsonplaceholder.typicode.com/posts',opt) //demo jason placeholder server -->
+<!-- .then(response => response.json()) -->
+<!-- .then(json => console.log(json)) -->
+
+
+fetch('https://jsonplaceholder.typicode.com/todos/100')
+.then(response => response.json())
+.then(json => console.log(json))
+</script>
+</html>

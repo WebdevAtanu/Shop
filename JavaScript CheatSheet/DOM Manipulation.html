@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+	<style>
+		nav{
+			display:flex;
+			list-style:none;
+		}
+		li{
+			padding:20px;
+		}
+		.skyblue{
+			background-color:skyblue;
+			color:black;
+		}
+		.lightgreen{
+			background-color:lightgreen;
+			color:black;
+		}
+		.textColor{
+			color:red;
+		}
+	</style>
+</head>
+<body>
+	<nav>
+	<li>home</li>
+	<li>contact</li>
+	<li>about</li>
+	</nav>
+	<p id="pid">Used for inner and outer HTML</p></br>
+	
+	<div id="attributeID" class="attributeClass" data-myAttribute="CustomAttribute">
+	This is used for attribute functions
+	</div></br>
+	
+	<div id="adjacent">This is used for insertAdjacentHTML</div></br>
+	
+	<div id="clsadd">This is used for adding class</div></br>
+	
+	<div id="eventButton"><button id="btnevt">Click me</button></div></br>
+</body>
+<script>
+	//text color and background change by javasript.
+	document.getElementsByTagName("nav")[0].firstElementChild.style.color="red";
+	document.getElementsByTagName("nav")[0].lastElementChild.style.color="green";
+	Array.from(document.getElementsByTagName("li")).forEach((element)=>{
+		element.style.background="lightyellow";
+		})
+		
+	//printing inner and outer html by javasript.	
+	console.log(document.getElementById('pid').innerHTML);
+	console.log(document.getElementById('pid').outerHTML);
+	//console.log(document.body.textContent);//for printing text content of the dom
+	
+	//attribute function
+	let att=document.getElementById("attributeID");
+	console.log(att.getAttribute("class"));//it shows the class name of the div
+	att.setAttribute("hidden","true");//it hidden the div content
+	att.setAttribute("class","newClassName")//it will change the class name of the div
+	//att.removeAttribute("class");//it will remove the class from div
+	console.log(att.getAttribute("class"));
+	console.log(att.attributes);//it shows the all attributes of the div
+	console.log(att.dataset);
+	
+	//createElement function
+	let i;
+	for(i=0;i<=5;i++){
+	let div=document.createElement("div");
+	div.innerHTML=`${i} "This is come from createElement function using for loop"`
+	document.body.append(div);
+	<!-- document.body.prepend(div);-->//it will create div first after body 
+	}
+	
+	//adjacent html function
+	let adjacent=document.getElementById("adjacent");
+	adjacent.insertAdjacentHTML("beforeend","<div>beforeend</div>");
+	<!-- adjacent.insertAdjacentHTML("beforebegin","<div>beforebegin</div>"); -->
+	<!-- adjacent.insertAdjacentHTML("afterbegin","<div>afterbegin</div>"); -->
+	<!-- adjacent.insertAdjacentHTML("afterend","<div>beforeend</div>"); -->
+	<!-- adjacent.remove(); -->
+	
+	//adding or removing class name 
+	let addclass=document.getElementById("clsadd");
+	addclass.className="skyblue";
+	<!-- addclass.classList.add("lightgreen"); -->
+	<!-- addclass.classList.remove("textColor"); -->
+	<!-- addclass.classList.toggle("textColor"); -->
+	
+	let btnevnt=function(){
+		alert("Button clicked");
+	}
+	btnevt.addEventListener("click",btnevnt);
+	// btnevt.removeEventListener("click",btnevnt); for removing the event
+	
+	//adding a script into body
+	function addScript(src,callback){
+		var newscript=document.createElement("script");
+		newscript.src=src;
+		document.body.appendChild(newscript);
+		newscript.onload=function(){
+			console.log("Added script with src: "+src);
+			callback();
+		}
+		newscript.onerror=function(){
+			console.log("Error on loading the script");
+		}
+	}
+	function Hello(){
+		console.log("Script Added");
+	}
+	addScript("ExternalJS.js",Hello);
+	
+	// //Promise methods
+	let promise=new Promise(function(res,rej){ //Creates a new Promise
+	setTimeout(()=>{
+	console.log("This is promise");
+	res(1);
+	},1000)
+	});
+	
+	let p1=new Promise((resolve,reject)=>{
+	setTimeout(()=>{
+	console.log("promise p1 resolved");
+	resolve(true);
+	},3000)
+	})
+	
+	p1.then((value)=>{
+	console.log("Value of promise p1 is ",value);
+	})
+	
+	let p2=new Promise((resolve,reject)=>{
+	setTimeout(()=>{
+	reject(new Error("promise p2 get an Error"));
+	},5000)
+	})
+	
+	p2.catch((error)=>{
+	console.log("Some error occured in p2");//Catch the error in promise
+	})
+	
+	//Promise chain then and catch
+	let p3=new Promise((resolve,reject)=>
+	setTimeout(()=>
+	{
+	console.log("resolve p3 after 6 sec");
+	resolve(true);
+	},6000
+	)
+	)
+	p3.then((value)=>{
+	let p4=new Promise((resolve,reject)=>{
+	setTimeout(()=>{
+	resolve(console.log("resolve p4 after 7 sec"))
+	},7000
+	)})
+	return p4
+	}).then((value)=>{console.log("we are done")})
+</script>
+</html>
