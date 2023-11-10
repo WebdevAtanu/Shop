@@ -380,3 +380,65 @@ let JsonObj=JSON.parse(JsonStr);// It is used for parse the string to object
 console.log(JsonObj);
 
 //-------------------------------------------------------------------------------------------------------
+
+//regular expression
+const regex=/very/g;
+let text="its very very dangerous very very risky";
+console.log(text.replace(regex,"little"));//the regex will replace the "very" with "little" globally.
+
+//-------------------------------------------------------------------------------------------------------
+
+// lexical "this" working with arrow function
+const data={
+	name:"Atanu",
+	role:"coder",
+	showData:function(){
+		setTimeout(()=>{
+			console.log(`The name is ${this.name} and role is ${this.role}`);
+		},2000
+	)
+}
+}
+data.showData();
+
+//-------------------------------------------------------------------------------------------------------
+
+// destructuring
+	let arr=["ram","sam"];
+	let [a,b]=arr; //The array elements will asign to the variables 
+	console.log(a);
+	console.log(b);
+
+	let {c,d}={c:"tom",d:"jerry"} //another example of setting variables
+	console.log(c);
+	console.log(d);
+
+// spread syntax
+	let arr1=[2,4,6];
+	let sum= (v1,v2,v3)=>{
+		return v1+v2+v3;
+	}
+	let sumres=sum(...arr1); //"..." is mandatory
+	console.log(sumres);
+
+// changing a object value
+let myobj={
+	name:"ram",
+	role:"coder",
+	company:"amazon"
+}
+console.log(myobj);
+console.log({...myobj, name:"sam"});
+
+//-------------------------------------------------------------------------------------------------------
+
+// closure
+function init(){
+	var name1="atanu";
+	function show(){
+		console.log("the name is",name1);
+	}
+	return show; // the function will return the logic and also the variable reference
+}
+let print=init();
+print();
