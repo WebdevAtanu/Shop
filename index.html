@@ -2,342 +2,281 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<meta name="viewport"content="width=device-width, initial-scale=1.0">
-		<title>Home</title>
-		<link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"crossorigin="anonymous">
-		<link rel="stylesheet"type="text/css"href="style.css">
-		<link rel="preconnect"href="https://fonts.googleapis.com">
-		<link rel="preconnect"href="https://fonts.gstatic.com"crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"rel="stylesheet">
-		<link rel="preconnect"href="https://fonts.googleapis.com">
-		<link rel="preconnect"href="https://fonts.gstatic.com"crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Lugrasimo&display=swap"rel="stylesheet">
-		<link rel="preconnect"href="https://fonts.googleapis.com">
-		<link rel="preconnect"href="https://fonts.gstatic.com"crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Lora&display=swap"rel="stylesheet">
-		<style>
-				/*		navbar*/
-		.navbar {
-			background-color: #111224;
-		}
-		.navbar-nav {
-			margin-left: 15%;
-		}
-		.navbar-nav li {
-			font-size: 20px;
-			margin-left: 20px;
-			font-family: 'Lora', serif;
-		}
-		.navbar-nav li a:hover {
-			color: skyblue;
-		}
-		.footer li a:hover {
-			color: skyblue;
-		}
-		.footer li a {
-			text-decoration: none;
-		}
-		.navbar-nav li a, .footer li a {
-			color: white;
-		}
-		.form-inline {
-			margin-left: 10%;
-		}
-		h3 {
-			font-family: 'Lora', serif;
-			font-size: 2rem;
-			background: linear-gradient(to right, #f32170, #ff6b08, #cf23cf, #eedd44);
-			-webkit-text-fill-color: transparent;
-			-webkit-background-clip: text;
-		}
-				/*		intro*/
-		.intro {
-			display: grid;
-			grid-template-columns: 50% 50%;
-			border-bottom: 2px solid;
-		}
-		.introtext {
-			background-color: #2b385a;
-		}
-		.inimg img {
-			height: 250px;
-			width: 100%;
-		}
-		.bannerp {
-			text-align: center;
-			font-size: 50px;
-			font-family: 'Lora', serif;
-			color: white;
-		}
-		p {
-			text-align: center;
-			font-size: 15px;
-			font-family: 'Lora', serif;
-			color: white;
-		}
-		/*main contain*/
-		h5 {
-			text-align: center;
-			font-family: 'Lora', serif;
-		}
-		.contain {
-			display: flex;
-			width: 100%;
-			margin: auto;
-			background-color: #e1e4e3;
-		}
-		.card {
-			margin: 10px auto;
-			width: 100%;
-			height: 350px;
-			box-shadow: 2px 2px 5px 1px grey;
-			padding:1rem;
-		}
-		.card-text {
-			color: #004040;
-			text-align: left;
-		}
-		.card-title {
-			border-bottom: 2px solid black;
-			text-align: left;
-		}
-		img {
-			height: 45%;
-		}
-				/*		responsive*/
-		@media only screen and (max-width:600px) {
-			.form-control{
-				width: 70%;
-			}
-			.navbar-nav{
-				display: flex;
-				flex-direction: row;
-			}
-			.navbar-nav li {
-    font-size: 14px;
-  }
-  .navbar-nav {
-    margin-left: 5%;
-}
-			.intro{
-				display: flex;
-				flex-direction: column;
-			}
-			.carousel-inner{
-				height: 25vh;
-			}
-			.contain {
-				display: flex;
-				flex-direction: column;
-				margin: 0px;
-			}
-			.navbar {
-				width: auto;
-			}
-			.collapse {
-				width: auto;
-				display: inline-block;
-			}
-		}
-		.footer {
-			background-color: #111224;
-		}
-		.footnav li {
-			list-style: none;
-			float: left;
-			margin: 5px;
-			font-family: 'Lora', serif;
-		}
-		.foot {
-			color: white;
-			font-size: 20px;
-		}
-		.footer a {
-			font-size: 20px;
-		}
-		</style>
-	</head>
-	<body>
-		<!-- Navbar-------------------------------------------------------->
-		<div id="nav">
-			<nav class="navbar navbar-expand-lg">
-				<div class="collapse navbar-collapse"id="navbarSupportedContent">
-					<h3>Maa kali gift corner</h3>
-					<form class="form-inline my-2 my-lg-0">
-						<input class="form-control mr-sm-2"type="search"placeholder="Search"aria-label="Search">
-						<button class="btn btn-outline-success my-2 my-sm-0"type="submit"><svg xmlns="http://www.w3.org/2000/svg"width="20"height="16"fill="currentColor"class="bi bi-search"viewBox="0 0 16 16">
-							<path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-						</svg></button>
-					</form>
-					<ul class="navbar-nav mr-auto">
-						<li class="nav-item active">
-							<a class="nav-link"href="home.html">Home</a>
-						</li>
-					</ul>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Maa Kali Gift Corner</title>
+		<link rel="stylesheet" href="Components\bootstrap.min.css">
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+			/>
+		</head>
+		<body>
+			<!-- navigation -->
+			<nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+				<div class="container-fluid">
+					<a class="navbar-brand" href="#"><img src="pics/nav/logo1.jpg" alt="" style="height:3rem;width:10rem;"></a>
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+							<li class="nav-item">
+								<a class="nav-link" aria-current="page" href="#">Home</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" aria-current="page" href="#products">Products</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" aria-current="page" href="#address">Address</a>
+							</li>
+							<li class="nav-item d-flex flex-row align-items-center ">
+								<img src="pics/nav/conversations.svg" alt="" style="height:30px; width:30px;">
+								<div id="headerContact" class="d-flex flex-row">
+									<p class="m-0">Have any questions?</p>
+									<span>Call: <a class="tel" href="tel:+919073106703">+91 9073106703</a></span>
+								</div>
+							</li>
+						</ul>
+					</div>
 				</div>
 			</nav>
-		</div>
-		<!-- intro --------------------------------------------------------------->
-		<div class="intro">
-			<div id="carouselExampleAutoplaying"class="carousel slide introtext"data-bs-ride="carousel">
-				<div class="carousel-inner">
-					<div class="carousel-item active">
-						<p class="bannerp">Quality Products</p>
-						<p>You can buy Quality Products from here.</p>
-					</div>
-					<div class="carousel-item">
-						<p class="bannerp">Affordable</p>
-						<p>You can buy Affordable Products from here.</p>
-					</div>
-					<div class="carousel-item">
-						<p class="bannerp">In store shopping </p>
-						<p>You can shop in store from here.</p>
-					</div>
-				</div>
-			</div>
-			<div class="inimg">
-				<div id="carouselExampleFade" class="carousel slide carousel-fade">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="https://assets.winni.in/groot/2022/10/28/mobile/birthday-gifts-banners.jpg" class="d-block w-100" alt="...">
-    </div>
-	<div class="carousel-item">
-      <img src="https://imgcdn.floweraura.com/new-year-gift-ideas-for-employees.jpg" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="https://img.etimg.com/thumb/width-1200,height-900,imgsize-12478,resizemode-75,msid-98156428/top-trending-products/gifts/12-unique-and-best-selling-birthday-gifts-under-rs-999.jpg" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="https://images.herzindagi.info/image/2023/Jan/gifffff22222.jpg" class="d-block w-100" alt="...">
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true" style="color:black"></span>
-    <span class="visually-hidden" style="color:black">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true" style="color:black"></span>
-    <span class="visually-hidden" style="color:black">Next</span>
-  </button>
-</div>
-			</div>
-		</div>
-		<!-- card ------------------------------------------------------------->
-		<div class="contain">
-			<div class="card">
-				<img class="card-img-top"src="./image/flask.jpg"alt="Flask">
-				<div class="card-body">
-					<h5 class="card-title">Steel Flask</h5>
-					<p class="card-text">&#8377 499</p>
-						<p class="card-text">Free delivery inside 3-4km of area</p>
-					<a href="about.html"class="btn btn-primary">Shop Info>></a>
-				</div>
-			</div>
-			<div class="card">
-				<img class="card-img-top"src="./image/bowl.jpg"alt="Card image cap">
-				<div class="card-body">
-					<h5 class="card-title">Bowl set</h5>
-					<p class="card-text">&#8377 499</p>
-						<p class="card-text">Free delivery inside 3-4km of area</p>
-					<a href="about.html"class="btn btn-primary">Shop Info>></a>
-				</div>
-			</div>
-			<div class="card">
-				<img class="card-img-top"src="./image/cooker.jpg"alt="Card image cap">
-				<div class="card-body">
-					<h5 class="card-title">Pressure Cooker</h5>
-					<p class="card-text">&#8377 499</p>
-					<p class="card-text">Free delivery inside 3-4km of area</p>
-					<a href="about.html"class="btn btn-primary">Shop Info>></a>
-				</div>
-			</div>
-			<div class="card">
-				<img class="card-img-top"src="./image/flask1.jpg"alt="Card image cap">
-				<div class="card-body">
-					<h5 class="card-title">Thermo Flask</h5>
-					<p class="card-text">&#8377 499</p>
-						<p class="card-text">Free delivery inside 3-4km of area</p>
-					<a href="about.html"class="btn btn-primary">Shop Info>></a>
-				</div>
-			</div>
-		</div>
-		<div class="contain">
-			<div class="card">
-				<img class="card-img-top"src="./image/hotpot.jpg"alt="Card image cap">
-				<div class="card-body">
-					<h5 class="card-title">Casserole</h5>
-					<p class="card-text">&#8377 499</p>
-						<p class="card-text">Free delivery inside 3-4km of area</p>
-					<a href="about.html"class="btn btn-primary">Shop Info>></a>
-				</div>
-			</div>
-			<div class="card">
-				<img class="card-img-top"src="./image/kadai.jpg"alt="Card image cap">
-				<div class="card-body">
-					<h5 class="card-title">Nonstick Kadai</h5>
-					<p class="card-text">&#8377 499</p>
-						<p class="card-text">Free delivery inside 3-4km of area</p>
-					<a href="about.html"class="btn btn-primary">Shop Info>></a>
-				</div>
-			</div>
-			<div class="card">
-				<img class="card-img-top"src="./image/plate.jpg"alt="Card image cap">
-				<div class="card-body">
-					<h5 class="card-title">Opalware Plates</h5>
-					<p class="card-text">&#8377 499</p>
-						<p class="card-text">Free delivery inside 3-4km of area</p>
-					<a href="about.html"class="btn btn-primary">Shop Info>></a>
-				</div>
-			</div>
-			<div class="card">
-				<img class="card-img-top"src="./image/tiffin.jpg"alt="Card image cap">
-				<div class="card-body">
-					<h5 class="card-title">Plastic Tiffinbox</h5>
-					<p class="card-text">&#8377 499</p>
-						<p class="card-text">Free delivery inside 3-4km of area</p>
-					<a href="about.html"class="btn btn-primary">Shop Info>></a>
-				</div>
-			</div>
-		</div>
-		<div class="contain">
+			<!-- end ====================================================================================================-->
 			
-			<div class="card">
-				<img class="card-img-top"src="./image/tiffin1.jpg"alt="Card image cap">
-				<div class="card-body">
-					<h5 class="card-title">Steel Tiffinbox</h5>
-					<p class="card-text">&#8377 499</p>
-						<p class="card-text">Free delivery inside 3-4km of area</p>
-					<a href="about.html"class="btn btn-primary">Shop Info>></a>
+			<!-- Slider main container -->
+			<div class="swiper">
+				<!-- Additional required wrapper -->
+				<div class="swiper-wrapper">
+					<!-- Slides -->
+					<div class="swiper-slide">
+						<div class="myintro">
+							<p>Welcome to the official website of</p>
+							<H1>MAA KALI GIFT CORNER</H1>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="myintro">
+							<H1>Quality Products</H1>
+							<p>You can buy quality products from here.</p>
+							
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="myintro">
+							<H1>Affordable</H1>
+							<p>You can buy affordable Products from here.</p>
+							
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="myintro">
+							<H1>In store shopping</H1>
+							<p>You can shop in store from here.</p>
+						</div>
+					</div>
 				</div>
+				<!-- If we need pagination -->
+				<div class="swiper-pagination"></div>
+				<!-- If we need navigation buttons -->
+				<!-- <div class="swiper-button-prev"></div> -->
+				<!-- <div class="swiper-button-next"></div> -->
+				<!-- If we need scrollbar -->
+				<!-- <div class="swiper-scrollbar"></div> -->
 			</div>
-			<div class="card">
-				<img class="card-img-top"src="./image/tiffinbox.jpg"alt="Card image cap">
-				<div class="card-body">
-					<h5 class="card-title">Milton Tiffinbox</h5>
-					<p class="card-text">&#8377 499</p>
-						<p class="card-text">Free delivery inside 3-4km of area</p>
-					<a href="about.html"class="btn btn-primary">Shop Info>></a>
+			<!-- end ====================================================================================================-->
+			<section id="products">
+				<div class="container-fluid mt-2">
+					<div class="row p-2">
+						<div class="col-md-3" data-aos="flip-up">
+							<div class="mycards m-3">
+								<div class="card" style="width: 100%;">
+									<img src="pics/asset/chair.jpg" class="card-img-top" alt="...">
+									<div class="card-body">
+										<h5 class="card-title">Chair</h5>
+										<p class="card-text">Starting from &#8377 299</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3" data-aos="flip-up">
+							<div class="mycards m-3">
+								<div class="card" style="width: 100%;">
+									<img src="pics/asset/table.jpg" class="card-img-top" alt="...">
+									<div class="card-body">
+										<h5 class="card-title">Table</h5>
+										<p class="card-text">Starting from &#8377 1049</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3" data-aos="flip-up">
+							<div class="mycards m-3">
+								<div class="card" style="width: 100%;">
+									<img src="pics/asset/bowl.jpg" class="card-img-top" alt="...">
+									<div class="card-body">
+										<h5 class="card-title">Bowl Set</h5>
+										<p class="card-text">Starting from &#8377 449</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3" data-aos="flip-up">
+							<div class="mycards m-3">
+								<div class="card" style="width: 100%;">
+									<img src="pics/asset/cooker.jpg" class="card-img-top" alt="...">
+									<div class="card-body">
+										<h5 class="card-title">Pressure Cooker</h5>
+										<p class="card-text">Starting from &#8377 499</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row p-2">
+						<div class="col-md-3" data-aos="flip-up">
+							<div class="mycards m-3">
+								<div class="card" style="width: 100%;">
+									<img src="pics/asset/flask.jpg" class="card-img-top" alt="...">
+									<div class="card-body">
+										<h5 class="card-title">Flask</h5>
+										<p class="card-text">Starting from &#8377 249</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3" data-aos="flip-up">
+							<div class="mycards m-3">
+								<div class="card" style="width: 100%;">
+									<img src="pics/asset/hotpot.jpg" class="card-img-top" alt="...">
+									<div class="card-body">
+										<h5 class="card-title">Caserole</h5>
+										<p class="card-text">Starting from &#8377 349</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3" data-aos="flip-up">
+							<div class="mycards m-3">
+								<div class="card" style="width: 100%;">
+									<img src="pics/asset/kadai.jpg" class="card-img-top" alt="...">
+									<div class="card-body">
+										<h5 class="card-title">Kadai</h5>
+										<p class="card-text">Starting from &#8377 299</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3" data-aos="flip-up">
+							<div class="mycards m-3">
+								<div class="card" style="width: 100%;">
+									<img src="pics/asset/tiffin.jpg" class="card-img-top" alt="...">
+									<div class="card-body">
+										<h5 class="card-title">Tiffin Box</h5>
+										<p class="card-text">Starting from &#8377 199</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
 				</div>
-			</div>
-			<div class="card">
-				<img class="card-img-top"src="./image/table.jpg"alt="Card image cap">
-				<div class="card-body">
-					<h5 class="card-title">Plastic Table</h5>
-					<p class="card-text">&#8377 499</p>
-						<p class="card-text">Free delivery inside 3-4km of area</p>
-					<a href="about.html"class="btn btn-primary">Shop Info>></a>
+			</section>
+			<!-- end ====================================================================================================-->
+			
+			<section id="address">
+				<div class="container-fluid" data-aos="fade-up">
+					<div class="row">
+						<div class="col-md-6">
+							<div id="add">
+							<p>Address: Krishnapur,Rajbanshi Para, Kolkata, West Bengal 700102</p>
+							<p><span>Phone: <a class="tel" href="tel:+919073106703">+91 9073106703</a></span></p>
+							<table class="table table-striped">
+  <thead>
+    <tr>
+      
+      <th scope="col">Day</th>
+      <th scope="col">Morning</th>
+      <th scope="col">Evening</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Sunday</th>
+      <td>9am–1pm</td>
+      <td>6pm-10pm</td>
+    </tr>
+    <tr>
+      <th scope="row">Monday</th>
+      <td>9am–1pm</td>
+      <td>6pm-10pm</td>
+    </tr>
+    <tr>
+      <th scope="row">Tuesday</th>
+      <td>9am–1pm</td>
+      <td>6pm-10pm</td>
+    </tr>
+    <tr>
+      <th scope="row">Wednesday</th>
+      <td>9am–1pm</td>
+      <td>6pm-10pm</td>
+    </tr>
+    <tr>
+      <th scope="row">Thursday</th>
+      <td>9am–1pm</td>
+      <td>6pm-10pm</td>
+    </tr>
+    <tr>
+      <th scope="row">Friday</th>
+      <td>9am–1pm</td>
+      <td>6pm-10pm</td>
+    </tr>
+    <tr>
+      <th scope="row">Saturday</th>
+      <td>9am–1pm</td>
+      <td>6pm-10pm</td>
+    </tr>
+  </tbody>
+</table>
+
+							
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div id="map">
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58940.61829455606!2d88.39483591016982!3d22.58700699662771!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0275a21d000001%3A0x1e7c5d704803e41!2sMaa%20Kali%20Gift%20Corner!5e0!3m2!1sen!2sin!4v1706345058557!5m2!1sen!2sin" width="100%" height="90%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+							</div>
+						</div>
+					</div>
 				</div>
-			</div>
-			<div class="card">
-				<img class="card-img-top"src="./image/chair.jpg"alt="Card image cap">
-				<div class="card-body">
-					<h5 class="card-title">Plastic Chair</h5>
-					<p class="card-text">&#8377 499</p>
-						<p class="card-text">Free delivery inside 3-4km of area</p>
-					<a href="about.html"class="btn btn-primary">Shop Info>></a>
-				</div>
-			</div>
+
+
+
+
+
+
+
+			</section>
+<div class="container-fluid p-3 d-flex justify-content-center bg-black mt-4">
+			<p style="color:white">Copyright © 2024. Designed and Developed by <span><a href="https://codepen.io/AmatureDev" target="_blank" class="text-decoration-none"> Atanu</a></span></p>
 		</div>
-	</body>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-</html>
+
+
+
+
+
+
+
+
+
+			<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+			<script>
+			AOS.init({
+			});
+			</script>
+			<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+			<script src="script.js"></script>
+		</body>
+		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+		<script src="Components/bootstrap.min.js"></script>
+	</html>
