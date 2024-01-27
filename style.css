@@ -44,7 +44,7 @@ h2 {
 	cursor: pointer;
 }
 .card{
- height: 35vh;
+ aspect-ratio:1;
 }
 .card> img {
 	height: 50%;
