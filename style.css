@@ -27,6 +27,20 @@ h2 {
 	aspect-ratio: 1/0.5;
 	background-repeat: no-repeat;
 	background-size: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	& h1 {
+		font-size: 4.5rem;
+		color: white;
+		background: #ff002d66;
+		padding: 1rem;
+		font-family: fantasy;
+		width: 100%;
+		text-align: center;
+	}
+
 }
 
 .myintro {
@@ -60,8 +74,27 @@ h2 {
 	background: #e7e6e64f;
 }
 
+.pinfo {
+	font-size: 10px;
+}
+
+.price {
+	color: #043804;
+}
+
 .card-title {
 	color: #023e4d;
+}
+
+.order {
+	& a {
+		text-decoration: none;
+	}
+
+	& img {
+		vertical-align: text-bottom;
+	}
+
 }
 
 .myslide {
@@ -93,6 +126,10 @@ h2 {
 @media screen and (max-width:960px) {
 	#coverimg {
 		height: 30vh;
+	}
+
+	.myintro_img h1 {
+		font-size: 1.5rem;
 	}
 
 }
