@@ -102,7 +102,7 @@ h2 {
 .custom_card {
 	background: #2b385a;
 	color: white;
-	padding:5px;
+	padding: 5px;
 
 	& p {
 		font-size: 10px;
@@ -115,9 +115,7 @@ h2 {
 	background: #cdbed52e;
 
 	& h4 {
-		
 		padding: 0.5rem;
-
 	}
 
 }
@@ -193,6 +191,10 @@ h2 {
 	}
 
 	.myintro_img h1 {
+		font-size: 1.5rem;
+	}
+
+	.custom_card> p {
 		font-size: 1.5rem;
 	}
 
