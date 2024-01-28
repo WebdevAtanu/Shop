@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
 html,
 body {
 	margin: 0;
@@ -97,15 +99,77 @@ h2 {
 
 }
 
-.myslide {
+.custom_card {
 	background: #2b385a;
-	padding: 2rem;
-	display: flex;
-	justify-content: center;
+	color: white;
+	padding:5px;
+
+	& p {
+		font-size: 10px;
+	}
+
 }
 
-.myslide img {
-	width: 50%;
+.banner {
+	text-align: center;
+	background: #cdbed52e;
+
+	& h4 {
+		
+		padding: 0.5rem;
+
+	}
+
+}
+
+.newCard {
+	aspect-ratio: 1/0.5;
+	margin-bottom: 2rem;
+	border-radius: 10px;
+	color: white;
+	position: relative;
+	transition: all 0.5s;
+	cursor: pointer;
+	font-family: 'Lobster', sans-serif;
+
+	&> a {
+		color: white;
+	}
+
+	&:hover {
+		transform: translateY(-15px);
+	}
+
+}
+
+.cardOverlay {
+	position: absolute;
+	background: #110223;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0.7;
+	border-radius: 10px;
+	z-index: 2;
+}
+
+.newCard> img {
+	position: absolute;
+	border-radius: 10px;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+}
+
+.newCard h5 {
+	position: absolute;
+	font-size: 2rem;
+	top: 35%;
+	left: 30%;
+	z-index: 3;
 }
 
 #add {
