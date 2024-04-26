@@ -30,17 +30,21 @@ h5 {
 
 .myintro_img {
 	background: url("pics/slide/pic1.jpg");
-	aspect-ratio: 1/0.5;
+	aspect-ratio: 1/0.3;
 	background-repeat: no-repeat;
 	background-size: 100%;
+	background-position: top;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 
+	marquee {
+		background: #00000061;
+	}
+
 	& h1 {
 		font-size: 4.5rem;
 		color: white;
-		background: #ff002d66;
 		padding: 1rem;
 		font-family: fantasy;
 		width: 100%;
@@ -195,8 +199,16 @@ h5 {
 }
 
 @media screen and (max-width:960px) {
-	#coverimg {
-		height: 30vh;
+	#navbarSupportedContent {
+		transition: all 0.5s;
+	}
+
+	.navbar-toggler:focus {
+		box-shadow: none;
+	}
+
+	.myintro_img {
+		aspect-ratio: 1/0.5;
 	}
 
 	.myintro_img h1 {
