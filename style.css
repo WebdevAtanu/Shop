@@ -19,11 +19,8 @@ h5 {
 	margin: 0 !important;
 }
 
-.navbar {
-	font-family: serif;
-}
-
-.nav-item> a {
+/*nav======================================================*/
+.nav-item a {
 	color: #150f61;
 	font-size: large;
 }
@@ -38,7 +35,7 @@ h5 {
 	align-items: center;
 	justify-content: center;
 
-	marquee {
+	& marquee {
 		background: #00000061;
 	}
 
@@ -53,6 +50,7 @@ h5 {
 
 }
 
+/*intro======================================================*/
 .myintro {
 	background: #2b385a;
 	display: flex;
@@ -63,55 +61,50 @@ h5 {
 	align-items: center;
 }
 
+/*cards======================================================*/
 .mycards {
 	cursor: pointer;
-}
 
-.card {
-	aspect-ratio: 1;
+	.card {
+		aspect-ratio: 1;
+		padding: 0.5rem;
 
-	& p {
-		margin: 0;
+		& p {
+			margin: 0;
+		}
+
+		img {
+			height: 70%;
+		}
+
+		.card-body {
+			padding: 0;
+
+			.card-title {
+				color: #023e4d;
+			}
+
+			.pinfo {
+				font-size: 15px;
+				color: #0000008a;
+			}
+
+			.card-text {
+				margin-top: 0;
+
+				.price {
+					color: #043804;
+				}
+
+			}
+
+		}
+
 	}
 
 }
 
-.card> img {
-	height: 70%;
-}
-
-.card-body {
-	background: #e7e6e64f;
-}
-
-.pinfo {
-	font-size: 15px;
-	color: #0000008a;
-}
-
-.card-text {
-	margin-top: 1rem !important;
-}
-
-.price {
-	color: #043804;
-}
-
-.card-title {
-	color: #023e4d;
-}
-
-.order {
-	& a {
-		text-decoration: none;
-	}
-
-	& img {
-		vertical-align: text-bottom;
-	}
-
-}
-
+/*custom cards======================================================*/
 .custom_card {
 	background: #2b385a;
 	color: white;
@@ -123,6 +116,7 @@ h5 {
 
 }
 
+/*banner======================================================*/
 .banner {
 	text-align: center;
 	background: #cdbed52e;
@@ -131,58 +125,59 @@ h5 {
 		padding: 0.5rem;
 	}
 
-}
-
-.newCard {
-	aspect-ratio: 1/0.5;
-	margin-bottom: 2rem;
-	border-radius: 10px;
-	color: white;
-	position: relative;
-	transition: all 0.5s;
-	cursor: pointer;
-	font-family: 'Lobster', sans-serif;
-
-	&> a {
+	.newCard {
+		aspect-ratio: 1/0.5;
+		margin-bottom: 2rem;
+		border-radius: 10px;
 		color: white;
+		position: relative;
+		transition: all 0.5s;
+		cursor: pointer;
+		font-family: 'Lobster', sans-serif;
+
+		& a {
+			color: white;
+		}
+
+		&:hover {
+			transform: translateY(-15px);
+		}
+
+		& img {
+			position: absolute;
+			border-radius: 10px;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			z-index: 1;
+		}
+
+		.cardOverlay {
+			position: absolute;
+			background: #110223;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			opacity: 0.7;
+			border-radius: 10px;
+			z-index: 2;
+		}
+
+		h5 {
+			position: absolute;
+			font-size: 2rem;
+			top: 35%;
+			left: 30%;
+			z-index: 3;
+		}
+
 	}
 
-	&:hover {
-		transform: translateY(-15px);
-	}
-
 }
 
-.cardOverlay {
-	position: absolute;
-	background: #110223;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	opacity: 0.7;
-	border-radius: 10px;
-	z-index: 2;
-}
-
-.newCard> img {
-	position: absolute;
-	border-radius: 10px;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	z-index: 1;
-}
-
-.newCard h5 {
-	position: absolute;
-	font-size: 2rem;
-	top: 35%;
-	left: 30%;
-	z-index: 3;
-}
-
+/*address======================================================*/
 #add {
 	padding: 3rem;
 
